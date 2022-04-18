@@ -1,0 +1,241 @@
+#style {
+    background: lightslategray;
+    font-family: fantasy; 
+    height: 100vh;
+    margin: 0px;
+}
+
+#title-section {
+    color: yellow;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+/* MEDIA QUERY UTILIZED BELOW FOR DESKTOPS */
+@media (min-width: 1300px) {
+    #navbar {
+        position: fixed;
+        left: 0px;
+        top: 100px;    
+        display: grid;
+        grid-template-columns: auto 125px;
+        grid-template-areas: 
+            "header links";
+    }
+
+    #navbar-header {
+        font-size: 1.5em;
+        grid-area: header;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        align-self: center;
+        text-shadow: -2px 2px yellow;
+    }
+
+    #navlinks {
+        grid-area: links;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link {
+        color: yellow;
+        text-shadow: 2px 2px black;
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.1);
+        color: black;
+        text-shadow: 2px 2px yellow;
+    }
+
+    #Lorem_ipsum_dolor {
+        grid-area: header_1;
+        max-width: 40vw;
+        padding-top: 25px;
+    }
+
+    #Lorem_ipsum_dolor2 {
+        grid-area: header_2;
+        max-width: 40vw;
+        margin-left: -50px;
+        padding-top: 15px;
+    }
+
+    #Lorem_ipsum_dolor3 {
+        grid-area: header_3;
+        max-width: 40vw;
+        margin-top: -65px;
+        padding-top: 25px;
+    }
+
+    #Lorem_ipsum_dolor4 {
+        grid-area: header_4;
+        max-width: 40vw;
+        margin-left: -50px;
+        margin-top: 0px;
+        padding-top: 15px;
+    }
+
+    #Lorem_ipsum_dolor5 {
+        grid-area: header_5;
+        max-width: 40vw;
+        padding-top: 15px;
+    }
+}
+/* MEDIA QUERY UTILIZED ABOVE FOR DESKTOPS */
+#content-section {
+    position: relative;
+    float: right;
+    width: 87vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "header_1 img1"
+        "img2 header_2 "
+        "header_3 img3"
+        "img4 header_4 "
+        "header_5 img5";
+}
+
+.header-section {
+    color: yellow;
+    text-shadow: 2px 2px black;
+    font-size: 1.5em;
+}
+
+.main-section {
+    text-align: justify;
+    max-width: 50vw;
+}
+
+#Lorem_ipsum_dolor {
+    grid-area: header_1;
+}
+
+.header-section {
+    text-align: center;
+}
+
+.img {
+    width: 30vw;
+    justify-self: center;
+}
+
+#img1 {
+    grid-area: img1;
+}
+
+#img2 {
+    grid-area: img2;
+}
+
+#Lorem_ipsum_dolor2 {
+    grid-area: header_2;
+}
+
+#Lorem_ipsum_dolor3 {
+    grid-area: header_3;
+}
+
+#img3 {
+    grid-area: img3;
+}
+
+#img4 {
+    grid-area: img4;
+    height: 500px;
+    width: auto;
+}
+
+#Lorem_ipsum_dolor4 {
+    grid-area: header_4;
+}
+
+#Lorem_ipsum_dolor5 {
+    grid-area: header_5;
+}
+
+#img5 {
+    grid-area: img5;
+    height: 500px;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* MEDIA QUERY UTILIZED BELOW FOR IPAD PRO */
+@media (max-width: 1200px) {
+    #main-doc {
+        justify-content: center;
+        max-width: 100vw;
+        font-size: 75%;
+    }
+
+    
+    #navbar {
+        background: lightslategray;
+        z-index: 2;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "links";
+    }
+
+    #navbar-header {
+        text-shadow: 1px 1px yellow;
+    }
+
+    .nav-link {
+        color: yellow;
+        text-shadow: 1px 1px black;
+        padding: 2em;
+    }
+
+    #title-section {
+        position: relative;
+        top: 50px;
+        max-width: 100vw;
+    }
+
+    #content-section {
+        position: absolute;
+        top: 200px;
+        left: 75px;
+        max-width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    .header-section {
+        text-shadow: 1px 1px black;
+    }
+
+    #img2 {
+        padding-top: 60px;
+    }
+
+    #img3 {
+        padding-top: 75px;
+        padding-left: 25px;
+    }
+
+    #img4 {
+        width: 30vw;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #img5 {
+        width: 30vw;
+        height: auto;
+        padding-left: 25px;
+    }
+}
+/* MEDIA QUERY UTILIZED ABOVE FOR IPAD PRO */
